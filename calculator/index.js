@@ -1,23 +1,23 @@
 let button = document.getElementById('btn');
 button.onclick = () => {
-    let x = document.getElementById('x').value
-    let y = document.getElementById('y').value
+    let A = document.getElementById('A').value
+    let P = document.getElementById('P').value
     let select = document.getElementById('select').value;
 
     let output = null;
     switch (select) {
         case '+':
-            output = parseInt(x) + parseInt(y);
+            output = parseInt(A) + parseInt(P);
             break;
         case '-':
-            output = x - y;
+            output = A - P;
             break;
         case '*':
-            output = x * y;
+            output = A * P;
             break;
         case '/':
-            output = x / y;
+            output = A / P;
             break;
     }
-    document.getElementById('output').innerText = output;
+    document.getElementById('output').value = output;
 }
